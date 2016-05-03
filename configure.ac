@@ -14,6 +14,8 @@ GENERIC_RELEASE=$GENERIC_MAJOR_VERSION.$GENERIC_MINOR_VERSION.$GENERIC_MICRO_VER
 AC_SUBST(GENERIC_RELEASE)
 AC_SUBST(GENERIC_VERSION)
 
+AC_PROG_CXX
+
 #
 # API version (often = GENERIC_MAJOR_VERSION.GENERIC_MINOR_VERSION)
 #
@@ -42,6 +44,20 @@ AM_INIT_AUTOMAKE([-Wall -Werror foreign])
 if ! test $PKG_CONFIG_PATH ; then
   PKG_CONFIG_PATH="/usr/lib/pkgconfig:/usr/local/lib/pkgconfig"
 fi
+
+AC_ARG_WITH(freeling,
+            [AS_HELP_STRING([--with-freeling=DIR],
+                            [Look for freeling include/libs in DIR])],
+            [ case "$withval" in
+               no)
+                 ;;
+               *)
+                 CPPFLAGS="-I$withval/include $CPPFLAGS"
+                 LDFLAGS="-L$withval/lib $LDFLAGS"
+                 ;;
+              esac ])
+
+
 
 AC_PROG_INSTALL
 AC_PROG_LN_S
@@ -100,7 +116,11 @@ fi
 PKG_CHECK_MODULES(MATXIN, [dnl
  lttoolbox >= required_lttoolbox_version dnl
  matxin >= required_matxin_version dnl
- libpcre >= required_libpcre_version], CPPFLAGS="$CPPFLAGS $MATXIN_CPPFLAGS $MATXIN_CFLAGS"; LIBS="$LIBS $MATXIN_LIBS")
+ libpcre >= required_libpcre_version], CPPFLAGS="$CPPFLAGS $MATXIN_CPPFLAGS $MATXIN_CFLAGS"; LIBS="$LIBS")
+
+# libpcre >= required_libpcre_version], CPPFLAGS="$CPPFLAGS $MATXIN_CPPFLAGS $MATXIN_CFLAGS"; LIBS="$LIBS $MATXIN_LIBS")
+
+AP_MKINCLUDE
 
 #
 # Generate these files

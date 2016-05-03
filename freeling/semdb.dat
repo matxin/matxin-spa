@@ -9,6 +9,6 @@ VMP a VMP00SM
 <DataFiles>
 senseDictFile  ./senses30.src
 formDictFile  ./dicc.src
-wnFile  ../common/wn30.src
+wnFile  ./common/wn30.src
 </DataFiles>
 

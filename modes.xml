@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modes>
+
+  <mode name="spa-analyser" install="no">
+    <pipeline>
+      <program name="matxin-analyser -f">
+        <file name="spa.cfg"/>
+      </program>
+    </pipeline>
+  </mode>
+
+</modes>
