@@ -1,4 +1,4 @@
-freelingesnecdir = $(pkgdatadir)/freeling/es/ner
+freelingesnecdir = $(prefix)/share/matxin/matxin-spa/freeling/ner
 freelingesnec_DATA = function.dat \
 		     ner-ab.dat \
 		     ner.abm \

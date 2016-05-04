@@ -2,9 +2,6 @@
 #### default configuration file for Spanish analyzer
 ##
 
-# REPLACE "@MATXINDATADIR@" with the right path to the data  
-# directory in your Matxin installation (e.g. /usr/local/var/opentrad_matxin)
-
 #### General options 
 Lang=es
 Locale=default
@@ -13,10 +10,10 @@ Locale=default
 AlwaysFlush=no
 
 #### Tokenizer options
-TokenizerFile=@MATXINDATADIR@/freeling/es/tokenizer.dat
+TokenizerFile=@prefix@/share/matxin/matxin-spa/freeling/tokenizer.dat
 
 #### Splitter options
-SplitterFile=@MATXINDATADIR@/freeling/es/splitter.dat
+SplitterFile=@prefix@/share/matxin/matxin-spa/freeling/splitter.dat
 
 #### Morfo options
 AffixAnalysis=yes
@@ -30,32 +27,32 @@ ProbabilityAssignment=yes
 OrthographicCorrection=no
 DecimalPoint=,
 ThousandPoint=.
-LocutionsFile=@MATXINDATADIR@/freeling/es/locucions.dat 
-QuantitiesFile=@MATXINDATADIR@/freeling/es/quantities.dat
-AffixFile=@MATXINDATADIR@/freeling/es/afixos.dat
-ProbabilityFile=@MATXINDATADIR@/freeling/es/probabilitats.dat
-DictionaryFile=@MATXINDATADIR@/freeling/es/dicc.src
-PunctuationFile=@MATXINDATADIR@/freeling/common/punct.dat
+LocutionsFile=@prefix@/share/matxin/matxin-spa/freeling/locucions.dat 
+QuantitiesFile=@prefix@/share/matxin/matxin-spa/freeling/quantities.dat
+AffixFile=@prefix@/share/matxin/matxin-spa/freeling/afixos.dat
+ProbabilityFile=@prefix@/share/matxin/matxin-spa/freeling/probabilitats.dat
+DictionaryFile=@prefix@/share/matxin/matxin-spa/freeling/dicc.src
+PunctuationFile=@prefix@/share/matxin/matxin-spa/freeling/common/punct.dat
 ProbabilityThreshold=0.001
 # NER options
 NERecognition=yes
-NPDataFile=@MATXINDATADIR@/freeling/es/np.dat
+NPDataFile=@prefix@/share/matxin/matxin-spa/freeling/np.dat
 ## --- comment line above and uncomment that below, if you want 
 ## --- a better NE recognizer (higer accuracy, lower speed)
-#NPDataFile=@MATXINDATADIR@/freeling/es/ner/ner-ab.dat
+#NPDataFile=@prefix@/share/matxin/matxin-spa/freeling/ner/ner-ab.dat
 
 #Spelling Corrector config file
-CorrectorFile=@MATXINDATADIR@/freeling/es/corrector/corrector.dat
+CorrectorFile=@prefix@/share/matxin/matxin-spa/freeling/corrector/corrector.dat
 
 ## NEC options
 NEClassification=no
-NECFile=@MATXINDATADIR@/freeling/es/nec/nec-svm.dat
+NECFile=@prefix@/share/matxin/matxin-spa/freeling/nec/nec-svm.dat
 
 #### Tagger options
 #Tagger=hmm
 Tagger=relax
-TaggerHMMFile=@MATXINDATADIR@/freeling/es/tagger.dat
-TaggerRelaxFile=@MATXINDATADIR@/freeling/es/constr_gram.dat
+TaggerHMMFile=@prefix@/share/matxin/matxin-spa/freeling/tagger.dat
+TaggerRelaxFile=@prefix@/share/matxin/matxin-spa/freeling/constr_gram.dat
 TaggerRelaxMaxIter=500
 TaggerRelaxScaleFactor=670.0
 TaggerRelaxEpsilon=0.001
@@ -64,8 +61,8 @@ TaggerRetokenize=yes
 TaggerForceSelect=retok
 
 #### Parser options
-GrammarFile=@MATXINDATADIR@/freeling/es/chunker/grammar-chunk.dat
+GrammarFile=@prefix@/share/matxin/matxin-spa/freeling/chunker/grammar-chunk.dat
 
 #### Dependence Parser options
-DepTxalaFile=@MATXINDATADIR@/freeling/es/dep/dependences.dat
+DepTxalaFile=@prefix@/share/matxin/matxin-spa/freeling/dep/dependences.dat
 

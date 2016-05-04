@@ -1,6 +1,8 @@
 
 @ap_include@
 
+SUBDIRS = freeling
+
 matxindir = $(prefix)/share/matxin
 
 bin_PROGRAMS = matxin-analyser

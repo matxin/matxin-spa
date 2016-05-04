@@ -1,3 +1,3 @@
-freelingesnecdir = $(pkgdatadir)/freeling/es/corrector
+freelingesnecdir = $(pkgdatadir)/freeling/corrector
 freelingesnec_DATA = corrector.dat \
 		     phonetics-corr.dat

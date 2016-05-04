@@ -1,4 +1,4 @@
-freelingesnecdir = $(pkgdatadir)/freeling/es/nec
+freelingesnecdir = $(prefix)/share/matxin/matxin-spa/freeling/nec
 freelingesnec_DATA = gazLOC-c.dat \
 		     gazLOC-p.dat \
 		     gazMISC-c.dat \

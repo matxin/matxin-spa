@@ -1,5 +1,5 @@
 SUBDIRS = nec corrector
 
-freelingcommondatadir = $(pkgdatadir)/freeling/common
+freelingcommondatadir = $(prefix)/share/matxin/matxin-spa/freeling/common
 freelingcommondata_DATA = punct.dat \
                           wn30.src

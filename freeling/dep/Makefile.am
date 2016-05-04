@@ -1,4 +1,4 @@
-freelingesdepdir = $(pkgdatadir)/freeling/es/dep
+freelingesdepdir = $(prefix)/share/matxin/matxin-spa/freeling/dep
 freelingesdep_DATA = adv-espec-verbs-es.dat \
                      dependences.dat \
                      marq-disc-es.dat \

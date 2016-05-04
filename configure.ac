@@ -128,6 +128,16 @@ AP_MKINCLUDE
 AC_CONFIG_FILES([
                  Makefile
 		 matxin-spa.pc
+		 matxin-spa.spa.cfg
+		 freeling/Makefile
+		 freeling/common/Makefile
+		 freeling/common/nec/Makefile
+		 freeling/common/corrector/Makefile
+		 freeling/chunker/Makefile
+		 freeling/corrector/Makefile
+		 freeling/dep/Makefile
+		 freeling/nec/Makefile
+		 freeling/ner/Makefile
                  ])
 AC_OUTPUT
 

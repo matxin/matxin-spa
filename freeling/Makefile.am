@@ -1,6 +1,6 @@
-SUBDIRS = chunker corrector dep nec ner
+SUBDIRS = chunker corrector dep nec ner common
 
-freelingesdir = $(pkgdatadir)/freeling/es
+freelingesdir = $(prefix)/share/matxin/matxin-spa/freeling/
 freelinges_DATA =  afixos.dat \
                    constr_gram.dat \
                    dicc.src \
