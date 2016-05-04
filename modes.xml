@@ -3,7 +3,7 @@
 
   <mode name="spa-analyser" install="no">
     <pipeline>
-      <program name="matxin-analyser -f">
+      <program name="matxin-freeling -f">
         <file name="spa.cfg"/>
       </program>
     </pipeline>
