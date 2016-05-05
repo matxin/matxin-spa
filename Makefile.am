@@ -1,3 +1,4 @@
+LANG=spa
 
 @ap_include@
 
@@ -11,5 +12,7 @@ matxin_freeling_SOURCES = analyser.cc io_redirect_handler.cc io_redirect_handler
 matxin_freeling_LDADD = -lfreeling -lboost_system -lboost_program_options
 
 matxin_DATA = matxin-spa.spa.cfg
+
+noinst_DATA=modes/$(LANG)-analyser.mode
 
 EXTRA_DIST=modes.xml
