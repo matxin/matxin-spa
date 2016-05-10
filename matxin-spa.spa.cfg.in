@@ -36,17 +36,17 @@ PunctuationFile=@prefix@/share/matxin/matxin-spa/freeling/common/punct.dat
 ProbabilityThreshold=0.001
 # NER options
 NERecognition=yes
-NPDataFile=@prefix@/share/matxin/matxin-spa/freeling/np.dat
+#NPDataFile=@prefix@/share/matxin/matxin-spa/freeling/np.dat
 ## --- comment line above and uncomment that below, if you want 
 ## --- a better NE recognizer (higer accuracy, lower speed)
-#NPDataFile=@prefix@/share/matxin/matxin-spa/freeling/ner/ner-ab.dat
+NPDataFile=@prefix@/share/matxin/matxin-spa/freeling/nerc/ner/ner-ab-rich.dat
 
 #Spelling Corrector config file
 CorrectorFile=@prefix@/share/matxin/matxin-spa/freeling/corrector/corrector.dat
 
 ## NEC options
-NEClassification=no
-NECFile=@prefix@/share/matxin/matxin-spa/freeling/nec/nec-svm.dat
+NEClassification=yes
+NECFile=@prefix@/share/matxin/matxin-spa/freeling/nerc/nec/nec-ab-rich.dat
 
 #### Tagger options
 #Tagger=hmm

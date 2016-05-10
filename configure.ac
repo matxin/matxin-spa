@@ -136,8 +136,10 @@ AC_CONFIG_FILES([
 		 freeling/chunker/Makefile
 		 freeling/corrector/Makefile
 		 freeling/dep/Makefile
-		 freeling/nec/Makefile
-		 freeling/ner/Makefile
+		 freeling/nerc/Makefile
+		 freeling/nerc/data/Makefile
+		 freeling/nerc/nec/Makefile
+		 freeling/nerc/ner/Makefile
                  ])
 AC_OUTPUT
 

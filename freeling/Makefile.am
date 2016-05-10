@@ -1,4 +1,4 @@
-SUBDIRS = chunker corrector dep nec ner common
+SUBDIRS = chunker corrector dep nerc common
 
 freelingesdir = $(prefix)/share/matxin/matxin-spa/freeling/
 freelinges_DATA =  afixos.dat \
