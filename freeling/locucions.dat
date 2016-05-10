@@ -12193,7 +12193,6 @@ a_dos_manos a_dos_manos RG I
 a_dos_velas a_dos_velas RG I
 a_duras_penas a_duras_penas RG I
 a_días a_días RG I
-a_dónde a_dónde PT000000 I
 a_dúo a_dúo RG I
 a_efecto_de a_efecto_de SPS00 I
 a_efecto_de_que a_efecto_de_que CS I
@@ -15457,7 +15456,7 @@ motu_proprio motu_proprio AQ0CN0 I
 motu_proprio motu_proprio RG I
 movement_for_democratic_change movement_for_democratic_change NP00000 I
 muammar_al-_gadafi muammar_al-_gadafi NP00000 I
-muchas_gracias muchas_gracias $2:NC I
+muchas_gracias muchas_gracias RG I
 muchas_veces muchas_veces $2:NC I
 mucho_antes mucho_antes RG I
 mucho_después mucho_después RG I

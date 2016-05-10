@@ -72,6 +72,8 @@ CONSTRAINTS
 % Lerro hau gehituta aldatuta fitxategi honetan:  probabilitas.dat
 %como CC-CS-PR-SP-VMI CC 0 CS 562 PR 0 SP 0 VMI 50
 
+
+
 %100.0 AQ0MS0<bueno>
 %    (0 <bueno>);
 
@@ -94,6 +96,12 @@ CONSTRAINTS
 
 20.0 VMIP2S0
          ( 0 (haces));
+
+
+20.0 PP3CNO00
+        ( 0 (consigo))
+	(-1* V*)
+	(not -1 (lo));
 
 %% End Customization for MATXIN ===============================================
 
